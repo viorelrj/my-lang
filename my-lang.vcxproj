@@ -152,6 +152,7 @@
     <ClCompile Include="token.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="bimap.h" />
     <ClInclude Include="core.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

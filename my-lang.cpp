@@ -1,4 +1,3 @@
-#include "core.h"
 #include "token.h";
 
 #include <iostream>
@@ -12,10 +11,11 @@ string fileReader(string fileName) {
     inputFile.open(fileName);
     if (!inputFile.is_open()) return "";
 
-    while (!inputFile.eof()) {
+    for (;;) {
         inputFile >> temp;
+        if (inputFile.fail()) break;
         text.append(temp + " ");
-    } 
+    }
 
     inputFile.close();
 
@@ -25,6 +25,6 @@ string fileReader(string fileName) {
 
 
 int main() {
-    string text = fileReader("test.txt");
-    wordSpitter(text);
+    string sourceCode = fileReader("test.txt");
+    tokenizer(sourceCode);
 }
