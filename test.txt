@@ -4,5 +4,6 @@ function add(a, b) {
 
 function main() {
 	var c = add(2441, 12415);
+	print(c);
 	return 0;
 }

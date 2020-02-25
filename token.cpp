@@ -62,7 +62,7 @@ namespace tk {
 
         lexemesDef.set("{", _l_brace);
         lexemesDef.set("}", _r_brace);
-        lexemesDef.set("(", _l_paren);
+        lexemesDef.set("(", _l_paren); 
         lexemesDef.set(")", _r_paren);
         lexemesDef.set("-", _minus);
         lexemesDef.set("+", _plus);
